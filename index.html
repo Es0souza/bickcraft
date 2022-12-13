@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,
 feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+
   <title>Bikcraft - Bicicletas elétricas</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -17,7 +20,7 @@ feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcra
 <body>
   <header class="header-bg cor-12">
     <div class="header container">
-      <a href="./index.html"><img src="img/bikcraft.svg" alt="Bikcraft"></a>
+      <a href="./index.html"><img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft"></a>
 
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
@@ -35,11 +38,12 @@ feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcra
         <h1 class="font-1-xxl">Bicicletas feitas sob medida<span class="p-1">.</span></h1>
         <p class="font-2-l">Bicicletas elétricas de alta precisão e qualidade,
         feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="../bicicletas.html">Selecione a sua</a>
+        <a class="botao" href="./bicicletas.html">Selecione a sua</a>
       </div>
-        <div class="introducao-imagem">
-          <img src="img/fotos/introdução.jpg" alt="Bicicleta elétrica preta.">
-        </div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+        <img src="./img/fotos/introdução.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
+      </picture>
     </div>
   </main>
 
@@ -48,21 +52,21 @@ feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcra
     <ul class="">
       <li class="">
         <a href="./bicicletas/magic.html">
-          <img src="img/bicicletas/magic-home.jpg" alt="Bicicleta Elétrica Magic" class="">
+          <img src="./img/bicicletas/magic-home.jpg" width="920" height="1048" alt="Bicicleta Elétrica Magic" class="">
           <h3 class="font-1-xl">Magic Might</h3>
           <span class="font-2-m cor-8">R$: 2499</span>
         </a>
       </li>
       <li class="">
         <a href="./bicicletas/nimbus.html">
-          <img src="img/bicicletas/nimbus-home.jpg" alt="Bicicleta Elétrica Nimbus" class="">
+          <img src="./img/bicicletas/nimbus-home.jpg" width="920" height="1048" alt="Bicicleta Elétrica Nimbus" class="">
           <h3 class="font-1-xl">Nimbus Stark</h3>
           <span class="font-2-m cor-8">R$: 2499</span>
         </a>
       </li>
       <li class="">
         <a href="./bicicletas/nebula.html">
-          <img src="img/bicicletas/nebula-home.jpg" alt="Bicicleta Elétrica Nebula" class="">
+          <img src="./img/bicicletas/nebula-home.jpg"  width="920" height="1048" alt="Bicicleta Elétrica Nebula" class="">
           <h3 class="font-1-xl">Nebula Cosmic</h3>
           <span class="font-2-m cor-8">R$: 2499</span>
         </a>
@@ -79,19 +83,19 @@ feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcra
         <a class="link" href="./bicicletas.html">Escolha um modelo</a>
         <div class="tecnologia-vantagens">
           <div class="">
-            <img src="img/icones/eletrica.svg" alt="">
+            <img src="./img/icones/eletrica.svg" width="24" height="24" alt="">
             <h3 class="font-1-m cor-0">Motor Elétrico</h3>
             <p class="font-2-s cor-6">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
           </div>
           <div class="">
-            <img src="img/icones/rastreador.svg" alt="">
+            <img src="./img/icones/rastreador.svg" width="24" height="24" alt="">
             <h3 class="font-1-m cor-0">Rastreador</h3>
             <p class="font-2-s cor-6">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
           </div>
         </div>
       </div>
       <div class="tecnologia-imagem">
-        <img src="img/fotos/ferramentas.jpg" alt="" class="">
+        <img src="./img/fotos/ferramentas.jpg" width="1000" height="1659" alt="Ferramentas Artesanais">
       </div>
     </div>
   </article>
@@ -99,20 +103,20 @@ feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcra
   <section class="parceiros" aria-label="Nossos Parceiros">
     <h2 class="container font-1-xxl">nossos parceiros<span class="p-1">.</span></h2>
     <ul>
-      <li><img src="./img/parceiros/caravan.svg" alt="caravan"></li>
-      <li><img src="img/parceiros/dogs.svg" alt="dogs"></li>
-      <li><img src="img/parceiros/flexblog.svg" alt="flexblog"></li>
-      <li><img src="img/parceiros/handel.svg" alt="handel"></li>
-      <li><img src="img/parceiros/lescone.svg" alt="lescone"></li>
-      <li><img src="img/parceiros/ranek.svg" alt="ranek"></li>
-      <li><img src="img/parceiros/surfbot.svg" alt="surfbot"></li>
-      <li><img src="img/parceiros/wildbeast.svg" alt="wildbeast"></li>
+      <li><img src="./img/parceiros/caravan.svg" width="140" height="38" alt="caravan"></li>
+      <li><img src="./img/parceiros/dogs.svg" width="152" height="39" alt="dogs"></li>
+      <li><img src="./img/parceiros/flexblog.svg" width="164" height="38" alt="flexblog"></li>
+      <li><img src="./img/parceiros/handel.svg" width="139" height="50" alt="handel"></li>
+      <li><img src="./img/parceiros/lescone.svg" width="208" height="41" alt="lescone"></li>
+      <li><img src="./img/parceiros/ranek.svg" width="148" height="36" alt="ranek"></li>
+      <li><img src="./img/parceiros/surfbot.svg" width="200" height="49" alt="surfbot"></li>
+      <li><img src="./img/parceiros/wildbeast.svg" width="196" height="34" alt="wildbeast"></li>
     </ul>
   </section>
 
   <section class="depoimento" aria-label="Depoimento">
     <div class="">
-      <img src="img/fotos/depoimentos.jpg" alt="">
+      <img src="./img/fotos/depoimentos.jpg" width="1560" height="1360" alt="Ciclista feminina pelando">
     </div>
     <div class="depoimento-conteudo">
       <bloqkquote class="font-1-xl p-5">
@@ -154,7 +158,7 @@ feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcra
 
   <footer class="footer-bg">
     <div class="footer container">
-      <a href="./index.html"><img src="img/bikcraft.svg" alt="Bikcraft"></a>
+      <a href="./index.html"><img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft"></a>
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
@@ -176,14 +180,14 @@ feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcra
         </nav>
       </div>
       <div class="footer-redes">
-        <a href="">
-          <img src="img/redes/instagram.svg" alt="Instagram">
+        <a href="https://www.instagram.com/">
+          <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
         </a>
-        <a href="">
-          <img src="img/redes/facebook.svg" alt="Facebook">
+        <a href="https://pt-br.facebook.com/">
+          <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
         </a>
-        <a href="">
-          <img src="img/redes/youtube.svg" alt="Youtube">
+        <a href="https://www.youtube.com/">
+          <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
         </a>
       </div>
       <p class="footer-copy font-2-m cor-7">Bikcraft © alguns direitos reservados</p>
